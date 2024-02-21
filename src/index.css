@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.title {
+  text-align: center;
+}
+.file-input {
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cbd7cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.file-input:hover {
+  background-color: #555c55;
+  cursor: pointer;
+}
+
+.file-input:focus {
+  outline: none;
+}
+
+.playlist-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.playlist-title {
+  margin-top: 0;
+}
+
+.playlist {
+  list-style-type: none;
+  padding: 0;
+}
+
+.playlist-item {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.playlist-item:hover {
+  background-color: #6a6666;
+  color: rgb(253, 253, 253);
+}
+
+.playlist-item.active {
+  background-color: #f0f0f0;
+}
+
+.now-playing-container {
+  margin-top: 20px;
+}
+
+.now-playing-title {
+  margin-top: 0;
+}
+
+.audio-player {
+  margin-top: 20px;
+}
+
+.audio-player audio {
+  width: 100%;
+  height: 50px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.audio-player audio::-webkit-media-controls-panel {
+  background-color: transparent;
+}
+
+.audio-player audio::-webkit-media-controls-play-button,
+.audio-player audio::-webkit-media-controls-pause-button {
+  color: #333;
 }
